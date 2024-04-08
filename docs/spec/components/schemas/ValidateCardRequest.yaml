@@ -1,0 +1,22 @@
+type: object
+required:
+  - attributes
+properties:
+  attributes:
+    type: object
+    required:
+      - card_number
+      - expiration_month
+      - expiration_year
+    properties:
+      card_number:
+        type: string
+        example: '4111111111111111'
+      expiration_month:
+        type: integer
+        format: uint8
+        example: '12'
+      expiration_year:
+        type: integer
+        format: uint16
+        example: '2022'

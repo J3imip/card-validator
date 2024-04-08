@@ -14,4 +14,4 @@ FROM alpine:3.9
 COPY --from=buildbase /usr/local/bin/card-validator /usr/local/bin/card-validator
 RUN apk add --no-cache ca-certificates
 
-CMD ["card-validator"]
+CMD ["sh", "-c", "card-validator"]
